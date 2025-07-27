@@ -42,6 +42,8 @@ def submit():
     cur.close()
     return jsonify({'message': new_message})
 
+print("saleh can see u")
+
 if __name__ == '__main__':
     init_db()
     app.run(host='0.0.0.0', port=5000, debug=True)
